@@ -1,11 +1,32 @@
+@font-face {
+    font-family: Norse;
+    src: url('Norse-Bold.otf');
+}
+
+:root {
+    --clickables: #596D48;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clickables);
+    font-weight: bold;
+}
+
 body {
     display: flex;
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
+}
+
+.bottom {
+    font-size: large;
+    padding: 2vw;
 }
 
 button {
-    background-color: rgb(0, 100, 0);
+    background-color: var(--clickables);
     font-weight: bolder;
     color: white;
     border: none;
@@ -15,7 +36,12 @@ button {
     border-radius: 10px;
 }
 
-div {
+div.info {
+display: flex;
+gap: 1vw;
+}
+
+div.image {
     height: 100vh;
     width: 50vw;
     background-color: blueviolet;
@@ -24,15 +50,45 @@ div {
 }
 
 fieldset {
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 2vw;
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form {
+    width: 50vw;
 }
 
 h1{
     color: aquamarine;
 }
 
-label {
-    position: relative;
+.intro {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    justify-content: center;
+    height: 20vh;
+    padding: 2vw;
+}
+
+label + input {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    font-family: Norse;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 25rem;
+    padding: 1vh;
+    background-color: rgba(128, 128, 128, 0.589);
 }
 
 ul {
