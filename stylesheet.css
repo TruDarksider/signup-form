@@ -4,7 +4,15 @@
 }
 
 :root {
-    --clickables: #596D48;
+    --clickables: #733eb9;
+}
+
+:invalid {
+    border-color: red;
+}
+
+:valid {
+    border-color: blueviolet;
 }
 
 a {
@@ -41,7 +49,7 @@ display: flex;
 gap: 1vw;
 }
 
-div.image {
+div.image, img {
     height: 100vh;
     width: 50vw;
     background-color: blueviolet;
@@ -86,9 +94,13 @@ label + input {
     font-family: Norse;
     text-align: center;
     font-size: 4rem;
-    margin-top: 25rem;
+    position: relative;
+    top: -66%;
+    margin: 0;
     padding: 1vh;
     background-color: rgba(128, 128, 128, 0.589);
+    color: white;
+    width: 48.vw;
 }
 
 ul {
