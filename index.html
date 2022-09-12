@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="image">
+        <img src="fantasy.jpg" alt="Purple Forest above a lampost">
         <div id="logo">"Genie" Request</div>
     </div>
     <form action="/dont-have-a-place" method="post">
@@ -18,32 +19,32 @@
                 <h2>Let's do this!</h2>
                 <div class="info">
                     <p>
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="first-name">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" name="firstName" id="first-name" required>
                     </p>
                     <p>
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="last-name">
-                    </p>
-                </div>
-                <div class="info">
-                    <p>
-                        <label for="mail">Email</label>
-                        <input type="email" name="mail" id="email">
-                    </p>
-                    <p>
-                        <label for="phone">Phone Number</label>
-                        <input type="number" name="phone" id="phone">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" name="lastName" id="last-name" required>
                     </p>
                 </div>
                 <div class="info">
                     <p>
-                        <label for="pwd">Password</label>
-                        <input type="pwd" name="pwd" id="pdw">
+                        <label for="mail">Email*</label>
+                        <input type="email" name="mail" id="email" required>
                     </p>
                     <p>
-                        <label for="pwdConf">Confirm Password</label>
-                        <input type="pwd" name="pwdConf" id="pwdConf">
+                        <label for="phone">Phone Number (optional)</label>
+                        <input type="number" name="phone" id="phone" placeholder="(xxx)xxx-xxxx">
+                    </p>
+                </div>
+                <div class="info">
+                    <p>
+                        <label for="pwd">Password*</label>
+                        <input type="pwd" name="pwd" id="pdw" required>
+                    </p>
+                    <p>
+                        <label for="pwdConf">Confirm Password*</label>
+                        <input type="pwd" name="pwdConf" id="pwdConf" required>
                     </p>
                 </div>
             </fieldset>
